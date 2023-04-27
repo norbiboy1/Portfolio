@@ -16,13 +16,17 @@ body {
 }
 
 .bars {
-  width: 24px;
+  width: 22px;
   height: 18px;
-  margin-right: 23px;
+  margin: 0;
 }
 
 .bars:hover {
   background-color: blue;
+}
+
+.bars > li {
+  list-style-type: none;
 }
 
 .bars1 {
@@ -97,15 +101,18 @@ body {
   color: #fff;
   height: 50px;
   margin-top: 22px;
-}
-
-#collaboration-btn:active {
-  border-color: blue;
+  border-color: yellow;
 }
 
 #collaboration-btn:hover {
-  border-color: blue;
-  border-inline-color: red;
+  background-color: #fff;
+  color: #000;
+}
+
+#collaboration-btn:focus {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
 }
 
 .img-background {
