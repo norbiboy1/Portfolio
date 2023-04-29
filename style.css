@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 html,
 body {
   margin: 0;
@@ -69,8 +71,11 @@ body {
 }
 
 .about-me {
-  padding: 30px 0 0 16px;
-  width: 288px;
+  margin-left: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .about-me h1 {
@@ -81,8 +86,7 @@ body {
   font-size: 50px;
   line-height: 100%;
   color: #1a2236;
-  border: 1px solid #1a2236;
-  margin-top: 0;
+  margin-top: 56px;
   margin-bottom: 17px;
 }
 
@@ -119,7 +123,7 @@ body {
 
 .img-background {
   margin-top: 32px;
-  width: 375px;
+  width: 100%;
   height: 190px;
   background: url('assets/image_geometry_2.svg') no-repeat;
 }
@@ -144,7 +148,7 @@ body {
 }
 
 .proj-1 {
-  width: 320px;
+  width: 100%;
   height: 342px;
   display: flex;
   flex-direction: column;
@@ -163,7 +167,7 @@ body {
   backdrop-filter: blur(0.5px);
 }
 
-.description h2 {
+.description h1 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -178,6 +182,36 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+}
+
+.languages > li {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  margin: 0;
+}
+
+.frameworks > li {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  margin: 0;
+}
+
+.skills > li {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  margin: 0;
 }
 
 .description ul > li {
@@ -222,6 +256,21 @@ body {
   color: #fff;
 }
 
+.languages li:nth-child(1) {
+  list-style-type: none;
+  padding-bottom: 21px;
+}
+
+.frameworks li:nth-child(1) {
+  list-style-type: none;
+  padding-bottom: 21px;
+}
+
+.skills li:nth-child(1) {
+  list-style-type: none;
+  padding-bottom: 21px;
+}
+
 .description ul li:nth-child(1) {
   width: 69px;
   height: 20px;
@@ -251,7 +300,7 @@ body {
   line-height: 24px;
   text-align: center;
   margin-left: 20px;
-  border-color: yellow;
+  border-color: #fff;
 }
 
 .about button {
@@ -266,7 +315,7 @@ body {
   text-align: center;
   color: #fff;
   margin-top: 20px;
-  border-color: yellow;
+  border-color: #fff;
 }
 
 .description button:hover {
@@ -274,27 +323,9 @@ body {
   color: #000;
 }
 
-.languages img {
-  position: relative;
-  bottom: 12%;
-  left: 64%;
-}
-
-.frameworks img {
-  position: relative;
-  left: 67%;
-  bottom: 9%;
-}
-
-.skills img {
-  position: relative;
-  bottom: 21%;
-  left: 64%;
-}
-
 .description button img {
-  width: 20.57px;
-  height: 15.35px;
+  width: 18px;
+  height: 11.35px;
 }
 
 .about {
@@ -334,71 +365,56 @@ body {
   padding-left: 20px;
 }
 
-.languages {
+.languages-container {
+  width: 100%;
   margin-top: 27px;
   background-color: #1c528a;
-  width: 289px;
-  height: 289px;
 }
 
-.languages h1 {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 30px;
-  color: #fff;
+.languages {
   padding-top: 50px;
   padding-left: 50px;
-  margin: 0;
+  margin-bottom: 0;
 }
 
-.languages ul {
-  padding-left: 50px;
+.frameworks-container {
+  margin-top: 16px;
+  background-color: #e2505c;
+  width: 100%;
 }
 
 .frameworks {
-  margin-top: 16px;
-  background-color: #e2505c;
-  width: 289px;
-  height: 289px;
-}
-
-.frameworks h1 {
   padding-top: 50px;
   padding-left: 50px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 30px;
-  color: #fff;
-  margin: 0;
+  margin-bottom: 0;
 }
 
-.frameworks ul {
-  padding-left: 50px;
+.skills-container {
+  margin-top: 16px;
+  background-color: #febf52;
+  width: 100%;
 }
 
 .skills {
-  margin-top: 16px;
-  background-color: #febf52;
-  width: 289px;
-  height: 289px;
-}
-
-.skills h1 {
   padding-top: 50px;
   padding-left: 50px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 30px;
-  color: #fff;
-  margin: 0;
+  margin-bottom: 0;
 }
 
-.skills ul {
-  padding-left: 50px;
+.hashtag {
+  width: 100%;
+  height: 100px;
+  background: url('assets/hashtag.png') no-repeat 100%;
+}
+
+.rectangle {
+  width: 100%;
+  height: 100px;
+  background: url('assets/ic_framework.png') no-repeat 100%;
+}
+
+.idea {
+  width: 100%;
+  height: 100px;
+  background: url('assets/ic_skills.png') no-repeat 100%;
 }
