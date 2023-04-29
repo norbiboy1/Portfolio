@@ -167,7 +167,7 @@ body {
   backdrop-filter: blur(0.5px);
 }
 
-.description h1 {
+.description h2 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -335,7 +335,7 @@ body {
   margin-left: 16px;
 }
 
-.about h1 {
+.about h2 {
   font-family: 'Playfair Display', sans-serif;
   font-style: normal;
   font-weight: 400;
