@@ -192,6 +192,7 @@ body {
   line-height: 30px;
   color: #fff;
   margin: 0;
+  padding-top: 8px;
 }
 
 .frameworks > li {
@@ -202,6 +203,7 @@ body {
   line-height: 30px;
   color: #fff;
   margin: 0;
+  padding-top: 8px;
 }
 
 .skills > li {
@@ -212,6 +214,7 @@ body {
   line-height: 30px;
   color: #fff;
   margin: 0;
+  padding-top: 8px;
 }
 
 .description ul > li {
@@ -372,6 +375,7 @@ body {
 }
 
 .languages {
+  float: left;
   padding-top: 50px;
   padding-left: 50px;
   margin-bottom: 0;
@@ -384,6 +388,7 @@ body {
 }
 
 .frameworks {
+  float: left;
   padding-top: 50px;
   padding-left: 50px;
   margin-bottom: 0;
@@ -396,6 +401,7 @@ body {
 }
 
 .skills {
+  float: left;
   padding-top: 50px;
   padding-left: 50px;
   margin-bottom: 0;
@@ -403,18 +409,18 @@ body {
 
 .hashtag {
   width: 100%;
-  height: 100px;
-  background: url('assets/hashtag.png') no-repeat 100%;
+  height: 300px;
+  background: url('assets/hashtag.png') no-repeat 100% 100%;
 }
 
 .rectangle {
   width: 100%;
-  height: 100px;
-  background: url('assets/ic_framework.png') no-repeat 100%;
+  height: 300px;
+  background: url('assets/ic_framework.png') no-repeat 100% 100%;
 }
 
 .idea {
   width: 100%;
-  height: 100px;
-  background: url('assets/ic_skills.png') no-repeat 100%;
+  height: 300px;
+  background: url('assets/ic_skills.png') no-repeat 100% 100%;
 }
