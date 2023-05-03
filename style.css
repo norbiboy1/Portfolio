@@ -511,7 +511,7 @@ header {
 
 /* please put the styles of the inputs, textareas and button */
 
-/* #name {
+ #name {
   box-sizing: border-box;
   width: 288px;
   height: 52px;
@@ -572,7 +572,7 @@ header {
   font-size: 14px;
   line-height: 21px;
   color: #7d7c84;
-} */
+} 
 
 .links {
   display: flex;
