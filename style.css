@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 50px) and (max-width: 767px) {
   html,
   body {
     margin: 0;
@@ -14,7 +14,7 @@
   }
 
   .hamburger-menu {
-    width: 327px;
+    width: 100%;
     height: 74px;
     background: url('assets/Shape.png') no-repeat, url('assets/Shape-2.png') no-repeat 10% 12%;
     display: flex;
@@ -37,7 +37,6 @@
   .bars1 {
     position: relative;
     top: 5px;
-    left: 30px;
     background-color: #000;
     width: 20px;
     height: 2px;
@@ -47,7 +46,6 @@
   .bars2 {
     position: relative;
     top: 7px;
-    left: 30px;
     background-color: #000;
     width: 20px;
     height: 2px;
@@ -57,17 +55,14 @@
   .bars3 {
     position: relative;
     top: 9px;
-    left: 30px;
     background-color: #000;
     width: 20px;
     height: 2px;
     border: 0 solid black;
   }
 
-  .bars1:hover,
-  .bars2:hover,
-  .bars3:hover {
-    background-color: blue;
+  .bars:hover {
+    background-color: cyan;
   }
 
   .hello {
@@ -77,7 +72,6 @@
   }
 
   .about-me {
-    margin-left: 16px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -134,6 +128,7 @@
 
   .work {
     width: 100%;
+    margin-left: 16px;
     display: grid;
     justify-content: center;
     grid-template-rows: repeat(1, 1fr);
@@ -149,7 +144,7 @@
     line-height: 100%;
     color: #1a2236;
     margin-top: 40px;
-    margin-left: 16px;
+    margin-left: 26px;
   }
 
   .proj-1 {
@@ -269,7 +264,7 @@
   }
 
   .social-media-icons li:nth-child(1) {
-    padding-left: 18px;
+    padding-left: 0;
   }
 
   .languages li:nth-child(1) {
@@ -366,6 +361,10 @@
     height: 11.35px;
   }
 
+  .about-description {
+    width: 288px;
+  }
+
   .about {
     display: flex;
     flex-direction: column;
@@ -373,6 +372,7 @@
   }
 
   .about h2 {
+    width: 134px;
     font-family: 'Playfair Display', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -383,6 +383,7 @@
   }
 
   .about p {
+    width: 288px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -460,6 +461,7 @@
   }
 
   .contact {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -468,12 +470,13 @@
   }
 
   .contact-top-img {
-    width: 327px;
+    width: 100%;
     height: 74px;
     background: url('assets/Shape.png') no-repeat, url('assets/Shape-2.png') no-repeat 10% 12%;
   }
 
   .contact h2 {
+    width: 288px;
     margin-top: 32px;
     margin-bottom: 0;
     font-family: 'Playfair Display', sans-serif;
@@ -485,6 +488,7 @@
   }
 
   .contact p {
+    width: 288px;
     margin-top: 20px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -498,8 +502,7 @@
   .contact-form {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    margin-left: 18px;
+    align-items: flex-start;
   }
 
   .contact-form > label {
@@ -535,6 +538,8 @@
     font-size: 14px;
     line-height: 21px;
     color: #1a2236;
+    padding-left: 16px;
+    padding-top: 23px;
   }
 
   #email {
@@ -556,6 +561,8 @@
     font-size: 16px;
     line-height: 24px;
     color: #1a2236;
+    padding-left: 16px;
+    padding-top: 23px;
   }
 
   #message {
@@ -577,6 +584,8 @@
     font-size: 14px;
     line-height: 21px;
     color: #7d7c84;
+    padding-left: 16px;
+    padding-top: 14px;
   }
 
   .links {
@@ -589,8 +598,6 @@
   }
 
   .resume {
-    padding-top: 28px;
-    padding-left: 79px;
     margin-bottom: 0;
   }
 
@@ -612,6 +619,7 @@
     padding-left: 0;
     padding-top: 27.25px;
     margin-top: 0;
+    margin-right: 14px;
   }
 
   .desktop-work {
@@ -633,15 +641,19 @@
   .contact-desktop {
     display: none;
   }
+
+  .desktop-links {
+    display: none;
+  }
 }
 
-@media screen and (min-width: 768px) {
-  body,
-  html {
+@media screen and (min-width: 768px) and (max-width: 4000px) {
+  html,
+  body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    width: 100%;
+    min-width: 100%;
   }
 
   .mobile-version {
