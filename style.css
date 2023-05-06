@@ -799,9 +799,9 @@
   }
 
   .about-me-2 {
-    margin-left: 160px;
     width: 484px;
     height: 493px;
+    margin-left: 160px;
   }
 
   .about-me-2 h1 {
@@ -814,7 +814,6 @@
     font-size: 110px;
     line-height: 100%;
     color: #1a2236;
-    border: 1px solid #1a2236;
   }
 
   .about-me-2 p {
@@ -850,15 +849,14 @@
 
   .desktop-background {
     height: 877px;
-    width: 702px;
-    margin-left: 94px;
+    width: 100%;
     background: url('assets/desktop-version/image-geometry_1.png') 100% no-repeat;
   }
 
   .desktop-background-2 {
     position: absolute;
-    top: 48%;
-    left: 39%;
+    top: 108%;
+    left: 43%;
     width: 175px;
     height: 175px;
     background: url('assets/desktop-version/image_dots.png') no-repeat;
@@ -871,7 +869,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background: url('assets/desktop-version/image_dots.png') 36% 0% no-repeat, url('assets/desktop-version/Rectangle\ 46.png') 0% 46.5% no-repeat, url('assets/desktop-version/image-geometry_2.png') 51% 43% no-repeat, url('assets/desktop-version/Rectangle\ 27.png') 0% 77% no-repeat, url('assets/desktop-version/Rectangle\ 25.png') 100% 41% no-repeat, url('assets/desktop-version/Group\ 83.png') 100% 75% no-repeat, url('assets/desktop-version/Shape.png') 65% 81% no-repeat, url('assets/desktop-version/image-geometry_5.png') 0% 90% no-repeat, url('assets/desktop-version/image-geometry_4.png') 53% 88% no-repeat, url('assets/desktop-version/Rectangle\ 47.png') 83% 100% no-repeat;
+    background: url('assets/desktop-version/image_dots.png') 33% 0% no-repeat, url('assets/desktop-version/Rectangle\ 46.png') 0% 46.5% no-repeat, url('assets/desktop-version/image-geometry_2.png') 51% 43% no-repeat, url('assets/desktop-version/Rectangle\ 27.png') 0% 77% no-repeat, url('assets/desktop-version/Rectangle\ 25.png') 100% 41% no-repeat, url('assets/desktop-version/Group\ 83.png') 100% 75% no-repeat, url('assets/desktop-version/Shape.png') 59.5% 81% no-repeat, url('assets/desktop-version/image-geometry_5.png') 0% 90% no-repeat, url('assets/desktop-version/image-geometry_4.png') 53% 88% no-repeat, url('assets/desktop-version/Rectangle\ 47.png') 80.3% 100% no-repeat;
   }
 
   .desktop-projects {
@@ -885,7 +883,6 @@
     font-size: 110px;
     line-height: 100%;
     color: #1a2236;
-    border: 1px solid #1a2236;
     transform: rotate(-90deg);
   }
 
@@ -953,7 +950,7 @@
 
   .my-second-project {
     position: absolute;
-    top: 105%;
+    top: 238%;
     left: 67%;
     height: 218px;
     margin-top: 52px;
@@ -1014,8 +1011,8 @@
   .desktop-about {
     width: 289px;
     margin-top: 216px;
-    margin-left: 160px;
     display: grid;
+    margin-left: 160px;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1129,7 +1126,7 @@
 
   .about-me-desktop {
     position: absolute;
-    top: 178%;
+    top: 400%;
     left: 50%;
     display: flex;
     flex-direction: column;
@@ -1147,7 +1144,6 @@
     font-size: 110px;
     line-height: 100%;
     color: #1a2236;
-    border: 1px solid #1a2236;
     margin-bottom: 0;
   }
 
@@ -1195,7 +1191,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 158px;
-    background: url('assets/desktop-version/image-geometry_6.svg') 5% 0% no-repeat, url('assets/desktop-version/image-geometry_7.svg') 100% 100% no-repeat;
+    background: url('assets/desktop-version/image-geometry_6.svg') 0% 0% no-repeat, url('assets/desktop-version/image-geometry_7.svg') 100% 100% no-repeat;
     background-color: #f9f9fa;
   }
 
@@ -1381,5 +1377,58 @@
     flex-direction: row;
     justify-content: flex-start;
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .about-me-2 {
+    margin-left: 80px;
+  }
+
+  .about-me-2 h1 {
+    font-size: 50px;
+    height: 50px;
+  }
+
+  .desktop-background {
+    background-size: contain;
+  }
+
+  .desktop-background-2 {
+    top: 109%;
+    left: 28%;
+  }
+
+  .project-overlay {
+    width: 75%;
+  }
+
+  .my-first-project h2 {
+    font-size: 40px;
+  }
+
+  .my-first-project ul {
+    margin-left: 50px;
+  }
+
+  .my-first-project ul > li {
+    width: 116px;
+  }
+
+  .my-first-project button {
+    margin-left: 50px;
+  }
+
+  .my-second-project {
+    top: 238%;
+  }
+
+  .desktop-about {
+    margin-left: 100px;
+  }
+
+  .about-me-desktop {
+    margin-left: 125px;
+    top: 400%;
   }
 }
