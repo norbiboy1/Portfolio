@@ -647,7 +647,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 4000px) {
+@media screen and (min-width: 768px) and (max-width: 1440px) {
   html,
   body {
     margin: 0;
@@ -723,7 +723,7 @@
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
-    width: 144px;
+    width: 110px;
     font-size: 20px;
     color: #1a2236;
     margin-right: 20px;
@@ -805,7 +805,6 @@
   }
 
   .about-me-2 h1 {
-    margin-top: 192px;
     margin-bottom: 0;
     height: 220px;
     font-family: 'Playfair Display', sans-serif;
@@ -855,8 +854,8 @@
 
   .desktop-background-2 {
     position: absolute;
-    top: 108%;
-    left: 43%;
+    top: 96%;
+    left: 40%;
     width: 175px;
     height: 175px;
     background: url('assets/desktop-version/image_dots.png') no-repeat;
@@ -908,7 +907,7 @@
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 47px;
     line-height: 80%;
     color: #fff;
   }
@@ -950,7 +949,7 @@
 
   .my-second-project {
     position: absolute;
-    top: 238%;
+    top: 210%;
     left: 67%;
     height: 218px;
     margin-top: 52px;
@@ -1012,7 +1011,7 @@
     width: 289px;
     margin-top: 216px;
     display: grid;
-    margin-left: 160px;
+    margin-left: 53px;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1126,7 +1125,7 @@
 
   .about-me-desktop {
     position: absolute;
-    top: 400%;
+    top: 352%;
     left: 50%;
     display: flex;
     flex-direction: column;
@@ -1377,58 +1376,5 @@
     flex-direction: row;
     justify-content: flex-start;
     margin: 0;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1440px) {
-  .about-me-2 {
-    margin-left: 80px;
-  }
-
-  .about-me-2 h1 {
-    font-size: 50px;
-    height: 50px;
-  }
-
-  .desktop-background {
-    background-size: contain;
-  }
-
-  .desktop-background-2 {
-    top: 109%;
-    left: 28%;
-  }
-
-  .project-overlay {
-    width: 75%;
-  }
-
-  .my-first-project h2 {
-    font-size: 40px;
-  }
-
-  .my-first-project ul {
-    margin-left: 50px;
-  }
-
-  .my-first-project ul > li {
-    width: 116px;
-  }
-
-  .my-first-project button {
-    margin-left: 50px;
-  }
-
-  .my-second-project {
-    top: 238%;
-  }
-
-  .desktop-about {
-    margin-left: 100px;
-  }
-
-  .about-me-desktop {
-    margin-left: 125px;
-    top: 400%;
   }
 }
