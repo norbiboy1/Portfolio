@@ -730,18 +730,6 @@
     padding-left: 20px;
   }
 
-  .menu-desktop-version li:hover {
-    animation-name: hovering;
-    animation-duration: 0.2s;
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes hovering {
-    to {
-      text-decoration: underline;
-    }
-  } 
-
   .my-second-project ul > li {
     list-style-type: none;
     width: 169px;
@@ -784,6 +772,18 @@
     line-height: 27px;
     letter-spacing: -0.0525em;
     color: #fff;
+  }
+
+  .menu-desktop-version li:hover {
+    animation-name: hovering;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes hovering {
+    to {
+      text-decoration: underline;
+    }
   }
 
   .menu-desktop-version li:nth-child(1) {
