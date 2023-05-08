@@ -15,7 +15,8 @@ header {
 .hamburger-menu {
   width: 327px;
   height: 74px;
-  background: url('assets/Shape.png') no-repeat, url('assets/Shape-2.png') no-repeat 10% 12%;
+  background: url('assets/Shape.png') no-repeat,
+    url('assets/Shape-2.png') no-repeat 10% 12%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -470,7 +471,8 @@ header {
 .contact-top-img {
   width: 327px;
   height: 74px;
-  background: url('assets/Shape.png') no-repeat, url('assets/Shape-2.png') no-repeat 10% 12%;
+  background: url('assets/Shape.png') no-repeat,
+    url('assets/Shape-2.png') no-repeat 10% 12%;
 }
 
 .contact h2 {
@@ -612,4 +614,8 @@ header {
   padding-left: 0;
   padding-top: 27.25px;
   margin-top: 0;
+}
+
+li {
+  float: left;
 }
