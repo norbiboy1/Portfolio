@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @media screen and (min-width: 50px) and (max-width: 767px) {
+
   html,
   body {
     margin: 0;
@@ -30,7 +31,7 @@
     padding: 0;
   }
 
-  .bars > li {
+  .bars>li {
     list-style-type: none;
   }
 
@@ -183,7 +184,7 @@
     justify-content: flex-start;
   }
 
-  .languages > li {
+  .languages>li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -194,7 +195,7 @@
     padding-top: 8px;
   }
 
-  .frameworks > li {
+  .frameworks>li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -205,7 +206,7 @@
     padding-top: 8px;
   }
 
-  .skills > li {
+  .skills>li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -216,12 +217,12 @@
     padding-top: 8px;
   }
 
-  .social-media-icons > li {
+  .social-media-icons>li {
     list-style-type: none;
     padding-left: 29px;
   }
 
-  .description ul > li {
+  .description ul>li {
     list-style-type: none;
     margin-left: 20px;
     font-family: 'Poppins', sans-serif;
@@ -233,7 +234,7 @@
     line-height: 2;
   }
 
-  .languages ul > li {
+  .languages ul>li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -243,7 +244,7 @@
     color: #fff;
   }
 
-  .frameworks ul > li {
+  .frameworks ul>li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -253,7 +254,7 @@
     color: #fff;
   }
 
-  .skills ul > li {
+  .skills ul>li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -505,7 +506,7 @@
     align-items: flex-start;
   }
 
-  .contact-form > label {
+  .contact-form>label {
     width: 72px;
     height: 15px;
     font-family: 'Poppins', sans-serif;
@@ -647,7 +648,8 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (min-width: 768px) and (max-width: 4000px) {
+
   html,
   body {
     margin: 0;
@@ -697,13 +699,13 @@
     justify-content: center;
   }
 
-  .social-media-icons-desktop > li {
+  .social-media-icons-desktop>li {
     list-style-type: none;
     padding-right: 32px;
     margin-top: 48px;
   }
 
-  .menu-desktop-version > li {
+  .menu-desktop-version>li {
     padding-top: 38px;
     list-style-type: none;
     padding-right: 50px;
@@ -716,7 +718,7 @@
     color: #1a2236;
   }
 
-  .my-first-project ul > li {
+  .my-first-project ul>li {
     list-style-type: none;
     height: 40px;
     background-color: #98dede;
@@ -742,7 +744,7 @@
     }
   } */
 
-  .my-second-project ul > li {
+  .my-second-project ul>li {
     list-style-type: none;
     width: 169px;
     background-color: #98dede;
@@ -756,7 +758,7 @@
     color: #1a2236;
   }
 
-  .technologies-languages ul > li {
+  .technologies-languages ul>li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -766,7 +768,7 @@
     color: #fff;
   }
 
-  .technologies-framework ul > li {
+  .technologies-framework ul>li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -776,7 +778,7 @@
     color: #fff;
   }
 
-  .technologies-skills ul > li {
+  .technologies-skills ul>li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -1220,7 +1222,7 @@
     color: #1a2236;
   }
 
-  .contact-form-desktop > label {
+  .contact-form-desktop>label {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
