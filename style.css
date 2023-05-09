@@ -342,9 +342,16 @@
     text-align: center;
   }
 
+  .contact-form button:active {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid black;
+  }
+
   .contact-form button:hover {
     background-color: #fff;
     color: #000;
+    border: 1px solid black;
   }
 
   .resume img {
@@ -354,6 +361,7 @@
   .description button:hover {
     background-color: #fff;
     color: #000;
+    border: 1px solid black;
   }
 
   .description button img {
@@ -396,6 +404,7 @@
   .about button:hover {
     color: #000;
     background-color: #fff;
+    border: 1px solid black;
   }
 
   .about button img {
