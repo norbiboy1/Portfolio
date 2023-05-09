@@ -15,7 +15,8 @@ header {
 .hamburger-menu {
   width: 327px;
   height: 74px;
-  background: url('assets/Shape.png') no-repeat, url('assets/Shape-2.png') no-repeat 10% 12%;
+  background: url('assets/Shape.png') no-repeat,
+    url('assets/Shape-2.png') no-repeat 10% 12%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -470,7 +471,8 @@ header {
 .contact-top-img {
   width: 327px;
   height: 74px;
-  background: url('assets/Shape.png') no-repeat, url('assets/Shape-2.png') no-repeat 10% 12%;
+  background: url('assets/Shape.png') no-repeat,
+    url('assets/Shape-2.png') no-repeat 10% 12%;
 }
 
 .contact h2 {
@@ -535,6 +537,7 @@ header {
   font-size: 14px;
   line-height: 21px;
   color: #1a2236;
+  padding: 15px;
 }
 
 #email {
@@ -556,6 +559,7 @@ header {
   font-size: 16px;
   line-height: 24px;
   color: #1a2236;
+  padding: 15px;
 }
 
 #message {
@@ -577,6 +581,7 @@ header {
   font-size: 14px;
   line-height: 21px;
   color: #7d7c84;
+  padding: 15px;
 }
 
 .links {
