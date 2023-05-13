@@ -37,7 +37,7 @@
 
   .desktop-version {
     display: block;
-    height: 100px;
+    height: 125px;
     background-color: #fff;
     box-shadow: 0 0.5px 0 #dddfe6;
   }
@@ -205,8 +205,8 @@
 
   .desktop-background-2 {
     position: absolute;
-    top: 108%;
-    left: 35%;
+    top: 820px;
+    left: 750px;
     width: 175px;
     height: 175px;
     background: url('assets/desktop-version/image_dots.png') no-repeat;
@@ -300,7 +300,7 @@
 
   .my-second-project {
     position: absolute;
-    top: 240%;
+    top: 1815px;
     left: 67%;
     height: 218px;
     margin-top: 52px;
@@ -476,8 +476,8 @@
 
   .about-me-desktop {
     position: absolute;
-    top: 410%;
-    left: 50%;
+    top: 3050px;
+    left: 650px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
