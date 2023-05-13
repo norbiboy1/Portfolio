@@ -342,9 +342,6 @@
     text-align: center;
   }
 
-  .contact-form button:hover {
-    background-color: #fff;
-    color: #000;
   }
 
   .resume img {
@@ -354,7 +351,6 @@
   .description button:hover {
     background-color: #fff;
     color: #000;
-  }
 
   .description button img {
     width: 18px;
@@ -396,7 +392,6 @@
   .about button:hover {
     color: #000;
     background-color: #fff;
-  }
 
   .about button img {
     height: 18px;
@@ -620,29 +615,5 @@
     padding-top: 27.25px;
     margin-top: 0;
     margin-right: 14px;
-  }
-
-  .desktop-work {
-    display: none;
-  }
-
-  .desktop-about {
-    display: none;
-  }
-
-  .about-me-desktop {
-    display: none;
-  }
-
-  .menu-desktop-version {
-    display: none;
-  }
-
-  .contact-desktop {
-    display: none;
-  }
-
-  .desktop-links {
-    display: none;
   }
 }
