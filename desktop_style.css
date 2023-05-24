@@ -42,6 +42,10 @@
     box-shadow: 0 0.5px 0 #dddfe6;
   }
 
+  .menu-show {
+    transform: translateY(0);
+  }
+
   .menu-desktop-version {
     display: flex;
     flex-direction: row;
@@ -55,8 +59,12 @@
   }
 
   .menu-desktop-version > li {
-    padding-top: 38px;
     list-style-type: none;
+  }
+
+  .menu-desktop-version li > a {
+    text-decoration: none;
+    padding-top: 38px;
     padding-right: 50px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
