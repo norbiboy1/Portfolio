@@ -27,7 +27,7 @@ const footerLinks = document.querySelectorAll('.links');
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 
 function toggleMenu() {
-  for (let i = 0; i < menu.length; i + 1) {
+  for (let i = 0; i < menu.length; i += 1) {
     if (menu[i].classList.contains('menu-show')) {
       menu[i].classList.remove('menu-show');
       section[i].style.display = 'flex';
@@ -92,6 +92,6 @@ function toggleMenu() {
   }
 }
 
-for (let i = 0; i < menu.length; i + 1) {
+for (let i = 0; i < menu.length; i += 1) {
   menu[i].addEventListener('click', toggleMenu);
 }
