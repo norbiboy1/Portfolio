@@ -137,3 +137,49 @@ function toggleMenu() {
 for (let i = 0; i < menu.length; i += 1) {
   menu[i].addEventListener('click', toggleMenu);
 }
+
+function scrollingDown() {
+  for (let i = 0; i < menu.length; i += 1) {
+    menu[i].addEventListener('click', () => {
+      anchorTag1.onclick = function () {
+        menuList1.style.display = 'none';
+        menuList2.style.display = 'none';
+        menuList3.style.display = 'none';
+
+        section[i].style.display = 'flex';
+        backgroundImg.style.display = 'block';
+        section[i].scrollIntoView();
+      };
+
+      anchorTag2.onclick = function () {
+        menuList1.style.display = 'none';
+        menuList2.style.display = 'none';
+        menuList3.style.display = 'none';
+
+        work[i].style.display = 'grid';
+        work[i].style.marginTop = '50px';
+        work[i].scrollIntoView();
+      };
+
+      anchorTag3.onclick = function () {
+        menuList1.style.display = 'none';
+        menuList2.style.display = 'none';
+        menuList3.style.display = 'none';
+
+        about[i].style.display = 'flex';
+        about[i].scrollIntoView();
+      };
+
+      anchorTag4.onclick = function () {
+        menuList1.style.display = 'none';
+        menuList2.style.display = 'none';
+        menuList3.style.display = 'none';
+
+        contact[i].style.display = 'flex';
+        contact[i].scrollIntoView();
+      };
+    });
+  }
+}
+
+scrollingDown();
