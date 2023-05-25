@@ -3,6 +3,8 @@ const menuList1 = document.querySelector('.bars1');
 const menuList2 = document.querySelector('.bars2');
 const menuList3 = document.querySelector('.bars3');
 const backgroundImg = document.querySelector('.img-background');
+const backgroundImg2 = document.querySelector('.bg-img');
+const container = document.querySelector('.bg-img-container');
 
 const menuDesktop = document.querySelectorAll('.menu-desktop-version');
 const list1 = document.querySelector('.element1');
@@ -36,12 +38,14 @@ function toggleMenu() {
       menuList1.style.top = '7px;';
       menuList2.style.display = 'block';
       menuList2.style.top = '12px';
+      menuList2.style.left = '30px';
       menuList3.style.display = 'block';
       menuList3.style.rotate = '0deg';
       menuList3.style.top = '15px';
       menuDesktop[i].style.display = 'none';
       work[i].style.marginTop = '0px';
       backgroundImg.style.display = 'block';
+      container.style.display = 'none';
       hamburgerMenu.style.width = '100%';
       hamburgerMenu.style.height = '74px';
       hamburgerMenu.style.backgroundImage = "url('assets/Shape.png'), url('assets/Shape-2.png')";
@@ -53,6 +57,15 @@ function toggleMenu() {
       footerLinks[i].style.display = 'flex';
     } else {
       menu[i].classList.add('menu-show');
+      container.style.display = 'flex';
+      container.style.justifyContent = 'flex-end';
+      backgroundImg2.style.backgroundImage = "url('assets/Mobile-dynamic/image_geometry_menu_2.svg')";
+      backgroundImg2.style.backgroundRepeat = 'no-repeat';
+      backgroundImg2.style.width = '320px';
+      backgroundImg2.style.height = '150px';
+      backgroundImg2.style.position = 'absolute';
+      backgroundImg2.style.top = '450px';
+      backgroundImg2.style.left = '0px';
       hamburgerMenu.style.backgroundImage = "url('assets/Mobile-dynamic/image_geometry_menu_1.svg')";
       hamburgerMenu.style.width = '320px';
       hamburgerMenu.style.height = '568px';
@@ -64,9 +77,11 @@ function toggleMenu() {
       menu[i].style.backgroundColor = '#fff';
       menuList1.style.rotate = '45deg';
       menuList1.style.top = '9px';
+      menuList1.style.left = '30px';
       menuList2.style.display = 'none';
       menuList3.style.rotate = '135deg';
       menuList3.style.top = '7px';
+      menuList3.style.left = '30px';
 
       menuDesktop[i].style.width = '66px';
       menuDesktop[i].style.height = '192px';
@@ -80,9 +95,36 @@ function toggleMenu() {
       list3.style.paddingTop = '30px';
 
       anchorTag1.style.display = 'block';
+      anchorTag1.style.fontFamily = 'Poppins';
+      anchorTag1.style.fontStyle = 'normal';
+      anchorTag1.style.fontWeight = '400';
+      anchorTag1.style.fontSize = '16px';
+      anchorTag1.style.color = '#000';
+      anchorTag1.style.textDecoration = 'none';
+
       anchorTag2.style.display = 'block';
+      anchorTag2.style.fontFamily = 'Poppins';
+      anchorTag2.style.fontStyle = 'normal';
+      anchorTag2.style.fontWeight = '400';
+      anchorTag2.style.fontSize = '16px';
+      anchorTag2.style.color = '#000';
+      anchorTag2.style.textDecoration = 'none';
+
       anchorTag3.style.display = 'block';
+      anchorTag3.style.fontFamily = 'Poppins';
+      anchorTag3.style.fontStyle = 'normal';
+      anchorTag3.style.fontWeight = '400';
+      anchorTag3.style.fontSize = '16px';
+      anchorTag3.style.color = '#000';
+      anchorTag3.style.textDecoration = 'none';
+
       anchorTag4.style.display = 'block';
+      anchorTag4.style.fontFamily = 'Poppins';
+      anchorTag4.style.fontStyle = 'normal';
+      anchorTag4.style.fontWeight = '400';
+      anchorTag4.style.fontSize = '16px';
+      anchorTag4.style.color = '#000';
+      anchorTag4.style.textDecoration = 'none';
 
       work[i].style.display = 'none';
       about[i].style.display = 'none';
