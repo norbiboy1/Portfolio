@@ -5,21 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" />
+    <link href="desktop_style.css" rel="stylesheet" />
+    <script src="pop-up-menu.js" defer></script>
     <title>My Portfolio</title>
   </head>
   <body>
-    <header>
+    <header class="mobile-version desktop-version">
       <nav class="hamburger-menu">
-        <ul class="bars">
+        <ul class="menu-desktop-version">
+          <li class="element0">
+            <a class="hello-item" href="#hello">Hello</a>
+          </li>
+          <li class="element1">
+            <a class="portfolio-item" href="#work">Portfolio</a>
+          </li>
+          <li class="element2">
+            <a class="about-item" href="#about">About</a>
+          </li>
+          <li class="element3">
+            <a class="contact-item" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <ul class="bars menu-show">
           <li class="bars1"></li>
           <li class="bars2"></li>
           <li class="bars3"></li>
         </ul>
       </nav>
+
+      <div class="bg-img-container">
+        <div class="bg-img"></div>
+      </div>
     </header>
 
-    <section class="hello">
-      <div class="about-me">
+    <section class="hello hello-desktop-version">
+      <div class="about-me about-me-2">
         <h1>Norbert Siko</h1>
         <p>
           Hello! I am a software developer! I can <br />
@@ -32,12 +52,14 @@
           Start collaboration
         </button>
       </div>
+      <div class="desktop-background"></div>
+      <div class="desktop-background-2"></div>
     </section>
 
     <div class="img-background"></div>
 
     <section class="work">
-      <h2 class="projects">Projects</h2>
+      <h2 class="projects desktop-projects">Projects</h2>
       <div class="proj-1">
         <img src="assets/Proj1.png" alt="project 1" />
         <div class="description">
@@ -135,6 +157,86 @@
       </div>
     </section>
 
+    <section class="desktop-work">
+      <h2 class="desktop-projects">Projects</h2>
+      <div class="my-first-project">
+        <div class="project-overlay"></div>
+        <h2>Project name goes here</h2>
+        <ul>
+          <li>HTML/CSS</li>
+          <li>Ruby on Rails</li>
+          <li>JavaScript</li>
+        </ul>
+        <button type="button">
+          See this project
+          <img src="assets/desktop-version/Union.png" alt="right arrow icon" />
+        </button>
+      </div>
+      <div class="my-second-project">
+        <h2>Project name goes...</h2>
+        <ul>
+          <li>HTML/CSS</li>
+          <li>Ruby on Rails</li>
+          <li>+1</li>
+        </ul>
+        <button type="button">
+          See this project
+          <img src="assets/desktop-version/Union.png" alt="right arrow icon" />
+        </button>
+        <div class="overlay-2"></div>
+      </div>
+    </section>
+
+    <section class="desktop-about">
+      <div class="technologies-languages">
+        <h2>Languages</h2>
+        <ul>
+          <li>JavaScript (ES6+)</li>
+          <li>Ruby</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+        <div class="hashtag-desktop"></div>
+      </div>
+      <div class="technologies-framework">
+        <h2>Frameworks</h2>
+        <ul>
+          <li>React.js</li>
+          <li>Ruby on Rails</li>
+          <li>RSpec</li>
+          <li>Capibara</li>
+        </ul>
+        <div class="framework-desktop"></div>
+      </div>
+      <div class="technologies-skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Database Management</li>
+          <li>CLI</li>
+          <li>API Design</li>
+          <li>Version Control</li>
+          <li>Web Development</li>
+        </ul>
+        <div class="skills-desktop"></div>
+      </div>
+      <div class="grid">
+        <div class="images"></div>
+      </div>
+    </section>
+
+    <aside class="about-me-desktop">
+      <h2>About</h2>
+      <p>
+        I can help you build a product , feature or website Look through <br />
+        some of my work and experience! If you like what you see and <br />
+        have a project you need coded, don’t hesitate to contact me.
+      </p>
+      <button type="button">
+        Get my CV
+        <img src="assets/desktop-version/Group 61.png" alt="download icon" />
+      </button>
+    </aside>
+
     <section class="about">
       <div class="about-description">
         <h2>About</h2>
@@ -184,6 +286,49 @@
       </div>
     </section>
 
+    <section class="contact-desktop">
+      <h2>Get started</h2>
+      <p>
+        I'm always interested in hearing about new projects, so if you'd like to
+        chat <br />
+        please get in touch.
+      </p>
+      <form
+        class="contact-form-desktop"
+        action="https://formspree.io/f/xjvdloba"
+        method="POST"
+      >
+        <label for="name">Your name</label>
+        <input
+          type="text"
+          id="name-desktop"
+          name="name"
+          placeholder="Anastasiia"
+          maxlength="30"
+          required
+        />
+        <div id="separator">
+          <label for="email">Your email</label>
+          <input
+            type="email"
+            id="email-desktop"
+            name="email"
+            placeholder="anastasiia@gm..."
+            accept="email"
+            required
+          />
+        </div>
+        <label for="message">Your message</label>
+        <textarea
+          id="message-desktop"
+          name="message"
+          placeholder="Enter your message here..."
+          maxlength="500"
+        ></textarea>
+        <button type="submit" class="btn-desktop">Start collaboration</button>
+      </form>
+    </section>
+
     <section class="contact">
       <div class="contact-top-img"></div>
       <h2>Get started</h2>
@@ -221,10 +366,48 @@
           name="message"
           placeholder="Enter your message here..."
           maxlength="500"
+          required
         ></textarea>
         <button type="submit">Start collaboration</button>
       </form>
     </section>
+
+    <footer class="desktop-links">
+      <p>
+        Get my CV
+        <img src="assets/desktop-version/Group 61.png" alt="download icon" />
+      </p>
+      <ul class="social-media-icons-desktop">
+        <li>
+          <a href="https://stackoverflow.com/users/19776566/siko-norbert"
+            ><img src="assets/ic_stackoverflow.png" alt="stack overflow"
+          /></a>
+        </li>
+        <li>
+          <a href="https://github.com/norbiboy1"
+            ><img src="assets/ic_github.png" alt="github"
+          /></a>
+        </li>
+        <li>
+          <a href="#twitter"
+            ><img src="assets/ic_twitter.png" alt="twitter"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/siko-norbert/"
+            ><img src="assets/ic_linkedin.png" alt="linkedIn"
+          /></a>
+        </li>
+        <li>
+          <a href="#medium"><img src="assets/ic_medium.png" alt="medium" /></a>
+        </li>
+        <li>
+          <a href="#angelist"
+            ><img src="assets/ic_angellist.png" alt="angelist"
+          /></a>
+        </li>
+      </ul>
+    </footer>
 
     <footer class="links">
       <p class="resume">
