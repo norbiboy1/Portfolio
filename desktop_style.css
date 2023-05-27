@@ -1,4 +1,5 @@
 @media screen and (min-width: 768px) and (max-width: 4000px) {
+
   html,
   body {
     margin: 0;
@@ -52,17 +53,17 @@
     justify-content: center;
   }
 
-  .social-media-icons-desktop > li {
+  .social-media-icons-desktop>li {
     list-style-type: none;
     padding-right: 32px;
     margin-top: 48px;
   }
 
-  .menu-desktop-version > li {
+  .menu-desktop-version>li {
     list-style-type: none;
   }
 
-  .menu-desktop-version li > a {
+  .menu-desktop-version li>a {
     text-decoration: none;
     padding-top: 38px;
     padding-right: 50px;
@@ -75,7 +76,7 @@
     color: #1a2236;
   }
 
-  .my-first-project ul > li {
+  .my-first-project ul>li {
     list-style-type: none;
     height: 40px;
     background-color: #98dede;
@@ -89,7 +90,7 @@
     padding-left: 20px;
   }
 
-  .my-second-project ul > li {
+  .my-second-project ul>li {
     list-style-type: none;
     width: 169px;
     background-color: #98dede;
@@ -103,7 +104,7 @@
     color: #1a2236;
   }
 
-  .technologies-languages ul > li {
+  .technologies-languages ul>li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -113,7 +114,7 @@
     color: #fff;
   }
 
-  .technologies-framework ul > li {
+  .technologies-framework ul>li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -123,7 +124,7 @@
     color: #fff;
   }
 
-  .technologies-skills ul > li {
+  .technologies-skills ul>li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -579,7 +580,7 @@
     color: #1a2236;
   }
 
-  .contact-form-desktop > label {
+  .contact-form-desktop>label {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -735,5 +736,53 @@
     flex-direction: row;
     justify-content: flex-start;
     margin: 0;
+  }
+
+  .projectPopUp {
+    display: none;
+  }
+
+  .projects {
+    display: none;
+  }
+
+  .proj-1 {
+    display: none;
+  }
+
+  .about-description {
+    display: none;
+  }
+
+  .languages-container {
+    display: none;
+  }
+
+  .frameworks-container {
+    display: none;
+  }
+
+  .skills-container {
+    display: none;
+  }
+
+  .contact h2 {
+    display: none;
+  }
+
+  .contact p {
+    display: none;
+  }
+
+  .contact-form {
+    display: none;
+  }
+
+  .resume {
+    display: none;
+  }
+
+  .social-media-icons>li {
+    display: none;
   }
 }

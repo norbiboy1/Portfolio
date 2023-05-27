@@ -3,29 +3,63 @@ div.setAttribute("class", "detailsWindow");
 div.style.width = "100%";
 div.style.height = "978px";
 
-const menuItem1 = document.querySelector(".bars1");
-const menuItem3 = document.querySelector(".bars3");
+const menuItem1 = document.createElement("span");
+menuItem1.setAttribute("class", "bars_1");
+const menuItem3 = document.createElement("span");
+menuItem3.setAttribute("class", "bars_3");
 
+menuItem1.style.position = "absolute";
 menuItem1.style.rotate = "45deg";
 menuItem1.style.top = "9px";
 menuItem1.style.left = "30px";
+menuItem1.style.width = "20px";
+menuItem1.style.height = "2px";
+menuItem1.style.backgroundColor = "#000";
 
+menuItem3.style.position = "absolute";
 menuItem3.style.rotate = "135deg";
 menuItem3.style.top = "7px";
 menuItem3.style.left = "30px";
+menuItem3.style.width = "20px";
+menuItem3.style.height = "2px";
+menuItem3.style.backgroundColor = "#000";
 
-const projects = document.querySelector(".proj-1");
-const title = document.querySelector(".title");
-const stacks = document.querySelector(".stacks");
-const stacks1 = document.querySelector(".stacks-1");
-const stacks2 = document.querySelector(".stacks-2");
-const stacks3 = document.querySelector(".stacks-3");
-const bgImageProj1 = document.querySelector(".bg-image-proj-1");
-const bgImageProj2 = document.querySelector(".bg-image-proj-2");
-const bgImageProj3 = document.querySelector(".bg-image-proj-3");
-const bgImageProj4 = document.querySelector(".bg-image-proj-4");
-const bgImageProj5 = document.querySelector(".bg-image-proj-5");
-const bgImageProj6 = document.querySelector(".bg-image-proj-6");
+const title = document.createElement("h2");
+title.setAttribute("class", "title");
+title.innerHTML = "Project name goes here";
+
+const stacks = document.createElement("ul");
+stacks.setAttribute("class", "stacks");
+
+const stacks1 = document.createElement("li");
+stacks1.setAttribute("class", "stacks-1");
+stacks1.innerHTML = "HTML/CSS";
+
+const stacks2 = document.createElement("li");
+stacks2.setAttribute("class", "stacks-2");
+stacks2.innerHTML = "Ruby on Rails";
+
+const stacks3 = document.createElement("li");
+stacks3.setAttribute("class", "stacks-3");
+stacks3.innerHTML = "JavaScript";
+
+const bgImageProj1 = document.createElement("img");
+bgImageProj1.setAttribute("class", "bg-image-proj-1");
+
+const bgImageProj2 = document.createElement("img");
+bgImageProj2.setAttribute("class", "bg-image-proj-2");
+
+const bgImageProj3 = document.createElement("img");
+bgImageProj3.setAttribute("class", "bg-image-proj-3");
+
+const bgImageProj4 = document.createElement("img");
+bgImageProj4.setAttribute("class", "bg-image-proj-4");
+
+const bgImageProj5 = document.createElement("img");
+bgImageProj5.setAttribute("class", "bg-image-proj-5");
+
+const bgImageProj6 = document.createElement("img");
+bgImageProj6.setAttribute("class", "bg-image-proj-6");
 
 const description = document.createElement("p");
 description.setAttribute("class", "descr");
@@ -135,9 +169,12 @@ function displayNoneToElements() {
 }
 
 function styleDynamically() {
+  menuItem1.style.display = "block";
   menuItem1.style.top = "20px";
   menuItem1.style.left = "270px";
   menuItem1.style.listStyleType = "none";
+
+  menuItem3.style.display = "block";
   menuItem3.style.top = "18px";
   menuItem3.style.left = "270px";
   menuItem3.style.listStyleType = "none";
@@ -179,6 +216,13 @@ function styleDynamically() {
   stacks3.style.borderStyle = "solid";
   stacks3.style.borderColor = "#1A2236";
 
+  bgImageProj1.style.backgroundImage = "url('assets/Proj1.png')";
+  bgImageProj2.style.backgroundImage = "url('assets/Proj2.png')";
+  bgImageProj3.style.backgroundImage = "url('assets/Proj3.png')";
+  bgImageProj4.style.backgroundImage = "url('assets/Proj4.png')";
+  bgImageProj5.style.backgroundImage = "url('assets/Proj5.png')";
+  bgImageProj6.style.backgroundImage = "url('assets/Proj6.png')";
+
   btnLive.style.width = "246px";
   btnLive.style.height = "51px";
   btnLive.style.borderWidth = "1px";
@@ -217,6 +261,7 @@ function styleDynamically() {
 workBtn1.addEventListener("click", function () {
   displayNoneToElements();
 
+  div.style.display = "flex";
   const detailsContainer = document.body.appendChild(div);
 
   detailsContainer.append(menuItem1, menuItem3);
@@ -230,11 +275,17 @@ workBtn1.addEventListener("click", function () {
     project1.btnSource
   );
 
-  project1.title.style.marginLeft = "20px";
   project1.title.style.marginTop = "57px";
 
   styleDynamically();
 
+  bgImageProj2.style.display = "none";
+  bgImageProj3.style.display = "none";
+  bgImageProj4.style.display = "none";
+  bgImageProj5.style.display = "none";
+  bgImageProj6.style.display = "none";
+
+  bgImageProj1.style.display = "block";
   bgImageProj1.style.width = "278.75px";
   bgImageProj1.style.height = "202.7px";
   bgImageProj1.style.marginLeft = "20.25px";
@@ -244,6 +295,20 @@ workBtn1.addEventListener("click", function () {
   detailsContainer.style.display = "flex";
   detailsContainer.style.flexDirection = "column";
   detailsContainer.style.alignItems = "flex-start";
+
+  menuItem1.addEventListener("click", function () {
+    navigationMenu.style.display = "flex";
+    aboutMe.style.display = "flex";
+    bgimg.style.display = "block";
+    workProjects.style.display = "grid";
+    aboutTechnology.style.display = "flex";
+    contactForm.style.display = "flex";
+    footerSection.style.display = "flex";
+
+    menuItem1.style.display = "none";
+    menuItem3.style.display = "none";
+    div.style.display = "none";
+  });
 });
 
 /* Second project pop-up */
@@ -251,6 +316,7 @@ workBtn1.addEventListener("click", function () {
 workBtn2.addEventListener("click", function () {
   displayNoneToElements();
 
+  div.style.display = "flex";
   const detailsContainer = document.body.appendChild(div);
 
   detailsContainer.append(menuItem1, menuItem3);
@@ -264,11 +330,17 @@ workBtn2.addEventListener("click", function () {
     project2.btnSource
   );
 
-  project2.title.style.marginLeft = "20px";
   project2.title.style.marginTop = "57px";
 
   styleDynamically();
 
+  bgImageProj1.style.display = "none";
+  bgImageProj3.style.display = "none";
+  bgImageProj4.style.display = "none";
+  bgImageProj5.style.display = "none";
+  bgImageProj6.style.display = "none";
+
+  bgImageProj2.style.display = "block";
   bgImageProj2.style.width = "278.75px";
   bgImageProj2.style.height = "202.7px";
   bgImageProj2.style.marginLeft = "20.25px";
@@ -278,6 +350,20 @@ workBtn2.addEventListener("click", function () {
   detailsContainer.style.display = "flex";
   detailsContainer.style.flexDirection = "column";
   detailsContainer.style.alignItems = "flex-start";
+
+  menuItem1.addEventListener("click", function () {
+    navigationMenu.style.display = "flex";
+    aboutMe.style.display = "flex";
+    bgimg.style.display = "block";
+    workProjects.style.display = "grid";
+    aboutTechnology.style.display = "flex";
+    contactForm.style.display = "flex";
+    footerSection.style.display = "flex";
+
+    menuItem1.style.display = "none";
+    menuItem3.style.display = "none";
+    div.style.display = "none";
+  });
 });
 
 /* Third project pop-up */
@@ -285,6 +371,7 @@ workBtn2.addEventListener("click", function () {
 workBtn3.addEventListener("click", function () {
   displayNoneToElements();
 
+  div.style.display = "flex";
   const detailsContainer = document.body.appendChild(div);
 
   detailsContainer.append(menuItem1, menuItem3);
@@ -298,11 +385,17 @@ workBtn3.addEventListener("click", function () {
     project3.btnSource
   );
 
-  project3.title.style.marginLeft = "20px";
   project3.title.style.marginTop = "57px";
 
   styleDynamically();
 
+  bgImageProj1.style.display = "none";
+  bgImageProj2.style.display = "none";
+  bgImageProj4.style.display = "none";
+  bgImageProj5.style.display = "none";
+  bgImageProj6.style.display = "none";
+
+  bgImageProj3.style.display = "block";
   bgImageProj3.style.width = "278.75px";
   bgImageProj3.style.height = "202.7px";
   bgImageProj3.style.marginLeft = "20.25px";
@@ -312,6 +405,20 @@ workBtn3.addEventListener("click", function () {
   detailsContainer.style.display = "flex";
   detailsContainer.style.flexDirection = "column";
   detailsContainer.style.alignItems = "flex-start";
+
+  menuItem1.addEventListener("click", function () {
+    navigationMenu.style.display = "flex";
+    aboutMe.style.display = "flex";
+    bgimg.style.display = "block";
+    workProjects.style.display = "grid";
+    aboutTechnology.style.display = "flex";
+    contactForm.style.display = "flex";
+    footerSection.style.display = "flex";
+
+    menuItem1.style.display = "none";
+    menuItem3.style.display = "none";
+    div.style.display = "none";
+  });
 });
 
 /* Fourth project pop-up */
@@ -319,6 +426,7 @@ workBtn3.addEventListener("click", function () {
 workBtn4.addEventListener("click", function () {
   displayNoneToElements();
 
+  div.style.display = "flex";
   const detailsContainer = document.body.appendChild(div);
 
   detailsContainer.append(menuItem1, menuItem3);
@@ -332,11 +440,17 @@ workBtn4.addEventListener("click", function () {
     project4.btnSource
   );
 
-  project4.title.style.marginLeft = "20px";
   project4.title.style.marginTop = "57px";
 
   styleDynamically();
 
+  bgImageProj1.style.display = "none";
+  bgImageProj2.style.display = "none";
+  bgImageProj3.style.display = "none";
+  bgImageProj5.style.display = "none";
+  bgImageProj6.style.display = "none";
+
+  bgImageProj4.style.display = "block";
   bgImageProj4.style.width = "278.75px";
   bgImageProj4.style.height = "202.7px";
   bgImageProj4.style.marginLeft = "20.25px";
@@ -346,6 +460,20 @@ workBtn4.addEventListener("click", function () {
   detailsContainer.style.display = "flex";
   detailsContainer.style.flexDirection = "column";
   detailsContainer.style.alignItems = "flex-start";
+
+  menuItem1.addEventListener("click", function () {
+    navigationMenu.style.display = "flex";
+    aboutMe.style.display = "flex";
+    bgimg.style.display = "block";
+    workProjects.style.display = "grid";
+    aboutTechnology.style.display = "flex";
+    contactForm.style.display = "flex";
+    footerSection.style.display = "flex";
+
+    menuItem1.style.display = "none";
+    menuItem3.style.display = "none";
+    div.style.display = "none";
+  });
 });
 
 /* Fifth project pop-up */
@@ -353,6 +481,7 @@ workBtn4.addEventListener("click", function () {
 workBtn5.addEventListener("click", function () {
   displayNoneToElements();
 
+  div.style.display = "flex";
   const detailsContainer = document.body.appendChild(div);
 
   detailsContainer.append(menuItem1, menuItem3);
@@ -366,11 +495,17 @@ workBtn5.addEventListener("click", function () {
     project5.btnSource
   );
 
-  project5.title.style.marginLeft = "20px";
   project5.title.style.marginTop = "57px";
 
   styleDynamically();
 
+  bgImageProj1.style.display = "none";
+  bgImageProj2.style.display = "none";
+  bgImageProj3.style.display = "none";
+  bgImageProj4.style.display = "none";
+  bgImageProj6.style.display = "none";
+
+  bgImageProj5.style.display = "block";
   bgImageProj5.style.width = "278.75px";
   bgImageProj5.style.height = "202.7px";
   bgImageProj5.style.marginLeft = "20.25px";
@@ -380,6 +515,20 @@ workBtn5.addEventListener("click", function () {
   detailsContainer.style.display = "flex";
   detailsContainer.style.flexDirection = "column";
   detailsContainer.style.alignItems = "flex-start";
+
+  menuItem1.addEventListener("click", function () {
+    navigationMenu.style.display = "flex";
+    aboutMe.style.display = "flex";
+    bgimg.style.display = "block";
+    workProjects.style.display = "grid";
+    aboutTechnology.style.display = "flex";
+    contactForm.style.display = "flex";
+    footerSection.style.display = "flex";
+
+    menuItem1.style.display = "none";
+    menuItem3.style.display = "none";
+    div.style.display = "none";
+  });
 });
 
 /* Sixth project pop-up */
@@ -387,6 +536,7 @@ workBtn5.addEventListener("click", function () {
 workBtn6.addEventListener("click", function () {
   displayNoneToElements();
 
+  div.style.display = "flex";
   const detailsContainer = document.body.appendChild(div);
 
   detailsContainer.append(menuItem1, menuItem3);
@@ -400,11 +550,17 @@ workBtn6.addEventListener("click", function () {
     project6.btnSource
   );
 
-  project6.title.style.marginLeft = "20px";
   project6.title.style.marginTop = "57px";
 
   styleDynamically();
 
+  bgImageProj1.style.display = "none";
+  bgImageProj2.style.display = "none";
+  bgImageProj3.style.display = "none";
+  bgImageProj4.style.display = "none";
+  bgImageProj5.style.display = "none";
+
+  bgImageProj6.style.display = "block";
   bgImageProj6.style.width = "278.75px";
   bgImageProj6.style.height = "202.7px";
   bgImageProj6.style.marginLeft = "20.25px";
@@ -414,4 +570,18 @@ workBtn6.addEventListener("click", function () {
   detailsContainer.style.display = "flex";
   detailsContainer.style.flexDirection = "column";
   detailsContainer.style.alignItems = "flex-start";
+
+  menuItem1.addEventListener("click", function () {
+    navigationMenu.style.display = "flex";
+    aboutMe.style.display = "flex";
+    bgimg.style.display = "block";
+    workProjects.style.display = "grid";
+    aboutTechnology.style.display = "flex";
+    contactForm.style.display = "flex";
+    footerSection.style.display = "flex";
+
+    menuItem1.style.display = "none";
+    menuItem3.style.display = "none";
+    div.style.display = "none";
+  });
 });

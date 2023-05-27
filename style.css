@@ -695,4 +695,17 @@
   .ic-github {
     margin-left: 36px;
   }
+
+  .projectPopUp {
+    display: none;
+  }
+
+  .detailsWindow {
+    display: none;
+  }
+
+  .bars_1,
+  .bars_3 {
+    display: none;
+  }
 }
