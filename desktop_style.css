@@ -784,4 +784,8 @@
   .resume {
     display: none;
   }
+
+  .detailsWindow {
+    display: none;
+  }
 }

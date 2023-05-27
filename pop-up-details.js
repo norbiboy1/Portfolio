@@ -23,8 +23,6 @@ bgImageProj.setAttribute("class", "bg-image-proj");
 const bgImageProj2 = document.createElement("img");
 bgImageProj2.setAttribute("class", "bg-image-proj-2");
 
-const img2 = document.querySelector(".bg-image-proj-2");
-
 const bgImageProj3 = document.createElement("img");
 bgImageProj3.setAttribute("class", "bg-image-proj-3");
 
@@ -79,14 +77,21 @@ stacks1.innerHTML = projects[0].technologies[0];
 stacks2.innerHTML = projects[0].technologies[1];
 stacks3.innerHTML = projects[0].technologies[2];
 
-const appendingTechnologies = document.querySelectorAll(".stacks");
+const array = [
+  projects[0].img[0],
+  projects[0].img[1],
+  projects[0].img[2],
+  projects[0].img[3],
+  projects[0].img[4],
+  projects[0].img[5],
+];
 
-bgImageProj.setAttribute("src", `${projects[0].img[0]}`);
-bgImageProj2.setAttribute("src", `${projects[0].img[1]}`);
-bgImageProj3.setAttribute("src", `${projects[0].img[2]}`);
-bgImageProj4.setAttribute("src", `${projects[0].img[3]}`);
-bgImageProj5.setAttribute("src", `${projects[0].img[4]}`);
-bgImageProj6.setAttribute("src", `${projects[0].img[5]}`);
+bgImageProj.setAttribute("src", array[0]);
+bgImageProj2.setAttribute("src", array[1]);
+bgImageProj3.setAttribute("src", array[2]);
+bgImageProj4.setAttribute("src", array[3]);
+bgImageProj5.setAttribute("src", array[4]);
+bgImageProj6.setAttribute("src", array[5]);
 
 p.innerHTML = projects[0].description;
 btnLive.innerHTML = projects[0].btnLive[0];
@@ -111,8 +116,6 @@ const contactForm = document.querySelector(".contact");
 const footerSection = document.querySelector(".links");
 
 function styleDynamically() {
-  technologies.append(stacks1, stacks2, stacks3);
-
   div.append(
     menuItem1,
     menuItem3,
@@ -262,11 +265,11 @@ function displayNoneToElements() {
 }
 
 function clickOnTheLinks() {
-  resumeLink.addEventListener("click", function () {
+  resumeLink.addEventListener("click", () => {
     window.open(projects[0].btnLive[1], "_blank").focus();
   });
 
-  gitHubLink.addEventListener("click", function () {
+  gitHubLink.addEventListener("click", () => {
     window.open(projects[0].btnSource[1], "_blank").focus();
   });
 }
