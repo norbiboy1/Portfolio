@@ -37,7 +37,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]
+- [my_live_project](https://norbiboy1.github.io/portfolio.github.io/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -64,15 +64,19 @@ Visual Studio Code (https://code.visualstudio.com/)
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project, execute the following command: click to run live server
 
 ### Run tests
 
 To run tests, run the following command:
+npx hint .
+npx stylelint "\*_/_.{css,scss}"
+npx eslint .
 
 ### Deployment
 
 You can deploy this project using:
+GitHub Pages
 
 ## 👥 Authors <a name="authors"></a>
 

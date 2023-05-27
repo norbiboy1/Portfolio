@@ -166,7 +166,18 @@
     backdrop-filter: blur(0.5px);
   }
 
-  .description h2 {
+  .title {
+    width: 264px;
+    height: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 80%;
+    color: #1a2236;
+  }
+
+  .description .title {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -176,7 +187,7 @@
     margin-left: 20px;
   }
 
-  .description ul {
+  .description .stacks {
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -283,20 +294,35 @@
   }
 
   .description ul li:nth-child(1) {
-    width: 69px;
-    height: 20px;
+    width: 80px;
+    height: 23px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10.3334px;
+    color: #1a2236;
     background: #98dede;
   }
 
   .description ul li:nth-child(2) {
-    width: 87px;
-    height: 20px;
+    width: 80px;
+    height: 23px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10.3334px;
+    color: #1a2236;
     background: #98dede;
   }
 
   .description ul li:nth-child(3) {
-    width: 74px;
-    height: 20px;
+    width: 80px;
+    height: 23px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10.3334px;
+    color: #1a2236;
     background: #98dede;
   }
 
@@ -342,13 +368,17 @@
     text-align: center;
   }
 
-  .resume img {
-    padding-left: 19.21px;
+  .about-me-desktop button {
+    display: none;
   }
 
   .description button:hover {
     background-color: #fff;
     color: #000;
+  }
+
+  .resume img {
+    padding-left: 19.21px;
   }
 
   .description button img {
@@ -513,7 +543,6 @@
   }
 
   /* please put the styles of the inputs, textareas and button */
-
   #name {
     box-sizing: border-box;
     width: 288px;
@@ -638,6 +667,136 @@
   }
 
   .desktop-links {
+    display: none;
+  }
+
+  .descr {
+    width: 291px;
+    height: 432px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1a2236;
+  }
+
+  .see-live {
+    width: 69px;
+    height: 27px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #1a2236;
+  }
+
+  .ic-link {
+    margin-left: 53px;
+  }
+
+  .see-source {
+    width: 100px;
+    height: 27px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #1a2236;
+  }
+
+  .ic-github {
+    margin-left: 36px;
+  }
+
+  .projectPopUp {
+    display: none;
+  }
+
+  .detailsWindow {
+    display: none;
+  }
+
+  .bars_1,
+  .bars_3 {
+    display: none;
+  }
+
+  .desktop-projects {
+    display: none;
+  }
+
+  .project-name {
+    display: none;
+  }
+
+  .stack-list {
+    display: none;
+  }
+
+  .my-first-project-button {
+    display: none;
+  }
+
+  .my-second-project h2 {
+    display: none;
+  }
+
+  .my-second-project ul {
+    display: none;
+  }
+
+  .my-second-project-button {
+    display: none;
+  }
+
+  .technologies-languages h2 {
+    display: none;
+  }
+
+  .technologies-languages ul {
+    display: none;
+  }
+
+  .technologies-framework h2 {
+    display: none;
+  }
+
+  .technologies-framework ul {
+    display: none;
+  }
+
+  .technologies-skills h2 {
+    display: none;
+  }
+
+  .technologies-skills ul {
+    display: none;
+  }
+
+  .about-me-desktop h2,
+  .about-me-desktop p {
+    display: none;
+  }
+
+  .contact-desktop h2,
+  .contact-desktop p {
+    display: none;
+  }
+
+  .contact-form-desktop {
+    display: none;
+  }
+
+  .desktop-links p {
+    display: none;
+  }
+
+  .social-media-icons-desktop {
     display: none;
   }
 }

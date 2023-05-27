@@ -58,6 +58,10 @@
     margin-top: 48px;
   }
 
+  .social-media-icons > li {
+    display: none;
+  }
+
   .menu-desktop-version > li {
     list-style-type: none;
   }
@@ -735,5 +739,53 @@
     flex-direction: row;
     justify-content: flex-start;
     margin: 0;
+  }
+
+  .projectPopUp {
+    display: none;
+  }
+
+  .projects {
+    display: none;
+  }
+
+  .proj-1 {
+    display: none;
+  }
+
+  .about-description {
+    display: none;
+  }
+
+  .languages-container {
+    display: none;
+  }
+
+  .frameworks-container {
+    display: none;
+  }
+
+  .skills-container {
+    display: none;
+  }
+
+  .contact h2 {
+    display: none;
+  }
+
+  .contact p {
+    display: none;
+  }
+
+  .contact-form {
+    display: none;
+  }
+
+  .resume {
+    display: none;
+  }
+
+  .detailsWindow {
+    display: none;
   }
 }

@@ -141,7 +141,7 @@ for (let i = 0; i < menu.length; i += 1) {
 function scrollingDown() {
   for (let i = 0; i < menu.length; i += 1) {
     menu[i].addEventListener('click', () => {
-      anchorTag1.onclick = function () {
+      anchorTag1.onclick = function clickable() {
         menuList1.style.display = 'none';
         menuList2.style.display = 'none';
         menuList3.style.display = 'none';
@@ -151,7 +151,7 @@ function scrollingDown() {
         section[i].scrollIntoView();
       };
 
-      anchorTag2.onclick = function () {
+      anchorTag2.onclick = function clickable() {
         menuList1.style.display = 'none';
         menuList2.style.display = 'none';
         menuList3.style.display = 'none';
@@ -161,7 +161,7 @@ function scrollingDown() {
         work[i].scrollIntoView();
       };
 
-      anchorTag3.onclick = function () {
+      anchorTag3.onclick = function clickable() {
         menuList1.style.display = 'none';
         menuList2.style.display = 'none';
         menuList3.style.display = 'none';
@@ -170,7 +170,7 @@ function scrollingDown() {
         about[i].scrollIntoView();
       };
 
-      anchorTag4.onclick = function () {
+      anchorTag4.onclick = function clickable() {
         menuList1.style.display = 'none';
         menuList2.style.display = 'none';
         menuList3.style.display = 'none';
