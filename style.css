@@ -343,13 +343,13 @@
     text-align: center;
   }
 
-  .resume img {
-    padding-left: 19.21px;
-  }
-
   .description button:hover {
     background-color: #fff;
     color: #000;
+  }
+
+  .resume img {
+    padding-left: 19.21px;
   }
 
   .description button img {
@@ -514,7 +514,6 @@
   }
 
   /* please put the styles of the inputs, textareas and button */
-
   #name {
     box-sizing: border-box;
     width: 288px;
