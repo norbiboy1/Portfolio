@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @media screen and (min-width: 50px) and (max-width: 767px) {
-
   html,
   body {
     margin: 0;
@@ -31,7 +30,7 @@
     padding: 0;
   }
 
-  .bars>li {
+  .bars > li {
     list-style-type: none;
   }
 
@@ -167,6 +166,17 @@
     backdrop-filter: blur(0.5px);
   }
 
+  .title {
+    width: 264px;
+    height: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 80%;
+    color: #1a2236;
+  }
+
   .description .title {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -184,7 +194,7 @@
     justify-content: flex-start;
   }
 
-  .languages>li {
+  .languages > li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -195,7 +205,7 @@
     padding-top: 8px;
   }
 
-  .frameworks>li {
+  .frameworks > li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -206,7 +216,7 @@
     padding-top: 8px;
   }
 
-  .skills>li {
+  .skills > li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -217,12 +227,12 @@
     padding-top: 8px;
   }
 
-  .social-media-icons>li {
+  .social-media-icons > li {
     list-style-type: none;
     padding-left: 29px;
   }
 
-  .description ul>li {
+  .description ul > li {
     list-style-type: none;
     margin-left: 20px;
     font-family: 'Poppins', sans-serif;
@@ -234,7 +244,7 @@
     line-height: 2;
   }
 
-  .languages ul>li {
+  .languages ul > li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -244,7 +254,7 @@
     color: #fff;
   }
 
-  .frameworks ul>li {
+  .frameworks ul > li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -254,7 +264,7 @@
     color: #fff;
   }
 
-  .skills ul>li {
+  .skills ul > li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -341,6 +351,10 @@
     font-size: 16px;
     line-height: 24px;
     text-align: center;
+  }
+
+  .about-me-desktop button {
+    display: none;
   }
 
   .description button:hover {
@@ -501,7 +515,7 @@
     align-items: flex-start;
   }
 
-  .contact-form>label {
+  .contact-form > label {
     width: 72px;
     height: 15px;
     font-family: 'Poppins', sans-serif;
@@ -641,17 +655,6 @@
     display: none;
   }
 
-  .title {
-    width: 264px;
-    height: 16px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 80%;
-    color: #1A2236;
-  }
-
   .descr {
     width: 291px;
     height: 432px;
@@ -660,7 +663,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
-    color: #1A2236;
+    color: #1a2236;
   }
 
   .see-live {
@@ -672,7 +675,7 @@
     font-size: 18px;
     line-height: 27px;
     text-align: center;
-    color: #1A2236;
+    color: #1a2236;
   }
 
   .ic-link {
@@ -688,7 +691,7 @@
     font-size: 18px;
     line-height: 27px;
     text-align: center;
-    color: #1A2236;
+    color: #1a2236;
   }
 
   .ic-github {
@@ -705,6 +708,80 @@
 
   .bars_1,
   .bars_3 {
+    display: none;
+  }
+
+  .desktop-projects {
+    display: none;
+  }
+
+  .project-name {
+    display: none;
+  }
+
+  .stack-list {
+    display: none;
+  }
+
+  .my-first-project-button {
+    display: none;
+  }
+
+  .my-second-project h2 {
+    display: none;
+  }
+
+  .my-second-project ul {
+    display: none;
+  }
+
+  .my-second-project-button {
+    display: none;
+  }
+
+  .technologies-languages h2 {
+    display: none;
+  }
+
+  .technologies-languages ul {
+    display: none;
+  }
+
+  .technologies-framework h2 {
+    display: none;
+  }
+
+  .technologies-framework ul {
+    display: none;
+  }
+
+  .technologies-skills h2 {
+    display: none;
+  }
+
+  .technologies-skills ul {
+    display: none;
+  }
+
+  .about-me-desktop h2,
+  .about-me-desktop p {
+    display: none;
+  }
+
+  .contact-desktop h2,
+  .contact-desktop p {
+    display: none;
+  }
+
+  .contact-form-desktop {
+    display: none;
+  }
+
+  .desktop-links p {
+    display: none;
+  }
+
+  .social-media-icons-desktop {
     display: none;
   }
 }
