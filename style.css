@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @media screen and (min-width: 50px) and (max-width: 767px) {
+
   html,
   body {
     margin: 0;
@@ -30,7 +31,7 @@
     padding: 0;
   }
 
-  .bars > li {
+  .bars>li {
     list-style-type: none;
   }
 
@@ -194,7 +195,7 @@
     justify-content: flex-start;
   }
 
-  .languages > li {
+  .languages>li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -205,7 +206,7 @@
     padding-top: 8px;
   }
 
-  .frameworks > li {
+  .frameworks>li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -216,7 +217,7 @@
     padding-top: 8px;
   }
 
-  .skills > li {
+  .skills>li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -227,12 +228,12 @@
     padding-top: 8px;
   }
 
-  .social-media-icons > li {
+  .social-media-icons>li {
     list-style-type: none;
     padding-left: 29px;
   }
 
-  .description ul > li {
+  .description ul>li {
     list-style-type: none;
     margin-left: 20px;
     font-family: 'Poppins', sans-serif;
@@ -244,7 +245,7 @@
     line-height: 2;
   }
 
-  .languages ul > li {
+  .languages ul>li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -254,7 +255,7 @@
     color: #fff;
   }
 
-  .frameworks ul > li {
+  .frameworks ul>li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -264,7 +265,7 @@
     color: #fff;
   }
 
-  .skills ul > li {
+  .skills ul>li {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -515,7 +516,7 @@
     align-items: flex-start;
   }
 
-  .contact-form > label {
+  .contact-form>label {
     width: 72px;
     height: 15px;
     font-family: 'Poppins', sans-serif;
@@ -783,5 +784,38 @@
 
   .social-media-icons-desktop {
     display: none;
+  }
+
+  input[type="email"] {
+    appearance: none;
+    width: 100%;
+    border: 1px solid #333;
+    margin: 0;
+    font-family: inherit;
+    font-size: 90%;
+    box-sizing: border-box;
+  }
+
+  input:invalid {
+    border-color: #900;
+    background-color: #fdd;
+  }
+
+  input:focus:invalid {
+    outline: none;
+  }
+
+  .error {
+    width: 100%;
+    padding: 0;
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+  }
+
+  .error.active {
+    padding: 0.3em;
   }
 }

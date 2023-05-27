@@ -9,6 +9,7 @@
     <script src="pop-up-menu.js" defer></script>
     <script src="pop-up-details.js" defer></script>
     <script src="pop-up-details-desktop.js" defer></script>
+    <script src="form-validation.js" defer></script>
     <title>My Portfolio</title>
   </head>
   <body>
@@ -320,6 +321,7 @@
             accept="email"
             required
           />
+          <span class="error" aria-live="polite"></span>
         </div>
         <label for="message">Your message</label>
         <textarea
@@ -371,7 +373,7 @@
           maxlength="500"
           required
         ></textarea>
-        <button type="submit">Start collaboration</button>
+        <button type="submit" class="btn-mobile">Start collaboration</button>
       </form>
     </section>
 
